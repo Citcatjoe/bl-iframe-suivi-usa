@@ -1682,6 +1682,32 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/img\/bg-large.png" : {
+      "ft" : 32768,
+      "iS" : 1125131,
+      "oA" : 0,
+      "oAP" : "\/img\/bg-large.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/img\/bg-mobile.png" : {
+      "ft" : 32768,
+      "iS" : 2902295,
+      "oA" : 0,
+      "oAP" : "\/img\/bg-mobile.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/img\/bg-texture.png" : {
       "ft" : 32768,
       "iS" : 112391,
@@ -2159,6 +2185,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/img\/logo.gif" : {
+      "ft" : 4194304,
+      "iS" : 2482485,
+      "oA" : 0,
+      "oAP" : "\/img\/logo.gif",
+      "oF" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
     "\/img\/phone-amit.png" : {
       "ft" : 32768,
       "iS" : 726488,
@@ -2310,6 +2346,19 @@
       "oF" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
+      "rq" : 75
+    },
+    "\/img\/usa-logo.png" : {
+      "ft" : 32768,
+      "iS" : 7282,
+      "oA" : 0,
+      "oAP" : "\/img\/usa-logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/index.html.twig" : {
