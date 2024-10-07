@@ -1,0 +1,41 @@
+
+
+@font-face {
+    font-family: 'blickregular';
+    src: url('../fonts/code-next_regular-webfont.woff2') format('woff2'),
+         url('../fonts/code-next_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'blickextrabold';
+    src: url('../fonts/code-next_extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/code-next_extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+span
+{
+    font-family: 'blickextrabold' !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important; 
+
+    font-size: 16px;
+    letter-spacing: -0.4px;
+    line-height: 1;
+    margin-bottom: 12px;
+
+    // 2 cases
+    @include breakpoint(min, small) {
+        font-size: 19px;
+    };
+}
+
+.text-blick
+{
+    color: #E2271B;
+}

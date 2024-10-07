@@ -1,0 +1,125 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html lang="fr" class="relative overflow-hidden"> 
+	<head>
+		<script src="https://cdn.tailwindcss.com"></script>  
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+		{{ block('head_brand') }}   
+		
+	</head>
+	<body class="bg-white"> 
+		
+		<!-- {{ block('loading_overlay') }} -->
+	
+		
+		{# block('header') #} 
+		{{ block('menu_overlay') }}
+		{# <?php include 'hb_header_tp.php'; ?> #} 
+		
+		
+
+		
+		
+		<a href="" target="_parent" id="link">
+			<div class="wrapper flex relative">
+				<div class="col1">
+					<img src="img/logo-blick-polaris.svg" alt="" class="logo absolute">
+				</div>
+				<div class="col2 relative flex-1">
+					
+					<div class="bg absolute bg-gray-200">
+						<span class="block w-full text-blick md:text-xl">Suivez l'info en<br>continu sur Blick</span>
+						<span class="block w-full md:text-xl">Téléchargez l'app</span>
+						<div class="btn-container absolute bottom-4">
+							<!-- <a href="https://play.google.com/store/apps/details?id=ch.blick.news.fr"><img src="img/btn-gstore-b.png" alt="" class=" drop-shadow-sm mb-2"></a>
+							<a href="https://apps.apple.com/ch/app/blick-fr/id1596317983?l=fr-FR"><img src="img/btn-astore-b.png" alt="" class=" drop-shadow-sm"></a> -->
+							<img src="img/btn-gstore-b.png" alt="" class="img-btn drop-shadow-sm mb-2">
+							<img src="img/btn-astore-b.png" alt="" class="img-btn drop-shadow-sm">
+							<img src="img/qr-code.png" alt="" class="img-qr drop-shadow-md">
+						</div>
+						<div class="absolute phone-container">
+							<div class="phone-container-inner">
+								<!-- <img src="img/tester.gif" alt="" cl ass="phone-gif">
+								<img src="img/phone-gif-tour.png" alt="" class="phone-gif-tour absolute top-0 left-0"> -->
+								<img src="img/phone-base.png" class="phone">
+								<img src="img/img-slide-1.png" class="phone phone-img-1 absolute top-0 left-0">
+								<img src="img/img-slide-2.png" class="phone phone-img-2 absolute top-0 left-0">
+								<img src="img/img-slide-3.png" class="phone phone-img-3 absolute top-0 left-0">
+								<img src="img/img-slide-4.png" class="phone phone-img-4 absolute top-0 left-0">
+								<img src="img/img-slide-5.png" class="phone phone-img-5 absolute top-0 left-0">
+								<img src="img/phone-white.png" class="phone phone-img-white absolute top-0 left-0">
+							</div>
+							<!-- <img src="img/phone-img-blick.png" class="phone phone-img-blick absolute top-0 left-0"> -->
+							<!-- <div class="swiper absolute top-0 left-0 w-full h-full">
+								<div class="swiper-wrapper">
+										<div class="swiper-slide"><img src="img/phone-amit.png" alt=""></div>
+										<div class="swiper-slide"><img src="img/phone-zaki.png" alt=""></div>
+										<div class="swiper-slide"><img src="img/phone-trump.png" alt=""></div>
+								</div>
+							</div> -->
+
+						</div>
+					</div> 
+				</div>
+				
+			</div>
+		</a>
+
+
+		{% raw %}  
+		<script id="item-template" type="text/x-handlebars-template">
+			{{#each item}}
+			<li class="mt-10">
+				<img src="" alt="" class="product-img">
+				<div class="product-values">
+					<span>{{name}}</span><br>
+					<span>{{symbol}}, ???</span><br>
+					<span>{{current_price}}</span><br>
+					<span>
+						<img src="img/this/arrow-up.svg" alt="" class="float-left" id="arrow-up">
+						<img src="img/this/arrow-down.svg" alt="" class="float-left" id="arrow-down">
+						<span id="product-24h-value">{{market_cap_change_percentage_24h}}</span>
+					</span><br>
+				</div>
+			</li>
+			{{/each}}
+		</script>
+		{% endraw %}
+
+		
+
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script> -->
+
+		<!-- <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+
+		<!-- <script src="js/counter-up.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script> -->
+		<!-- <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+		<!-- <script src="https://vjs.zencdn.net/8.0.4/video.min.js"></script> -->
+		
+		<!-- <script src="js/yt.js"></script> -->
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
+		<!-- <script src="js/plugins.js"></script> -->
+		<!-- <script src="js/header.js"></script> -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+		{# <script src="js/intro.js"></script> #}
+		<!-- <script src="js/headroom.min.js"></script> -->
+		
+
+		<script type="text/javascript" src="https://www.blick.ch/assets/iframeHeightAdjustment.js"></script>
+	</body>
+</html>
