@@ -92,12 +92,12 @@ button
     //height: auto;
     //height: 250px !important;
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 6/5;
     height: auto;
 
     background-image: url('../img/bg-mobile.png');
     background-size: cover;
-    background-position: center;
+    background-position: center top;
     
 
     // 2 cases
@@ -107,6 +107,7 @@ button
        height: 305px;
 
        background-image: url('../img/bg-large.png');
+       background-position: center;
        //background-size: cover;
     };
       
