@@ -226,43 +226,52 @@ header.headroom--unpinned {
 .logo {
   position: absolute;
   width: 120px;
-  height: min-content !important;
+  height: auto;
   top: 16px;
   left: 16px;
 }
 
-button {
+a {
+  display: block;
   font-family: Inter !important;
   background: linear-gradient(150deg, #ffffff, #dfdfdf) !important;
 }
-button:first-child {
+a button {
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  a button {
+    font-size: 12px;
+  }
+}
+a:first-child {
   width: calc(33% - 6px);
   float: left !important;
   margin-right: 12px;
 }
 @media (max-width: 500px) {
-  button:first-child {
+  a:first-child {
     width: 100%;
     margin-bottom: 12px;
     margin-right: 0;
   }
 }
-button:nth-child(2) {
+a:nth-child(2) {
   width: calc(33% - 6px);
   float: left !important;
   margin-right: 12px;
 }
 @media (max-width: 500px) {
-  button:nth-child(2) {
+  a:nth-child(2) {
     width: calc(50% - 6px);
   }
 }
-button:nth-child(3) {
+a:nth-child(3) {
   width: calc(33% - 6px);
   float: left !important;
 }
 @media (max-width: 500px) {
-  button:nth-child(3) {
+  a:nth-child(3) {
     width: calc(50% - 6px);
   }
 }
@@ -373,7 +382,8 @@ button:nth-child(3) {
   }
 }
 
-.wording2, .wording2b {
+.wording2,
+.wording2b {
   font-family: Inter !important;
 }
 
@@ -418,12 +428,12 @@ button:nth-child(3) {
 .red-line {
   width: 100%;
   height: 5px;
-  background: #E20000;
+  background: #e20000;
 }
 @media (min-width: 768px) {
   .red-line {
     height: 5px;
-    background: #E20000;
+    background: #e20000;
     width: 420px;
   }
 }
